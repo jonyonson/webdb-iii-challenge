@@ -20,7 +20,7 @@ function findById(id) {
 function update(id, changes) {
   return db('cohorts')
     .where({ id })
-    .update({ changes });
+    .update(changes);
 }
 
 function add(cohort) {
